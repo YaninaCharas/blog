@@ -5,15 +5,13 @@ from django import forms
 
 # Acá van los formularios
 class FormularioProvincias(forms.Form):
-    codigo=forms.IntegerField()
-    nombre=forms.CharField()
     zona=forms.CharField()
+    nombre=forms.CharField()
     descripcion=forms.CharField()
 
 class FormularioActividades(forms.Form):
     nombre=forms.CharField()
     descrpcion=forms.CharField()
-    provincia=forms.IntegerField()
 
 class FormularioUsuarios(forms.Form):
     nombre=forms.CharField()

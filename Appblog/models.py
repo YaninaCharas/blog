@@ -2,9 +2,8 @@ from django.db import models
 
 # Create your models here.
 class Provincias(models.Model):
-    codigo = models.IntegerField()
-    nombre = models.CharField(max_length=40)
     zona = models.CharField(max_length=15)
+    nombre = models.CharField(max_length=40)
     descripcion = models.CharField(max_length=150)
 
 class Actividades(models.Model):
