@@ -3,15 +3,16 @@
 {% block 'contenido-variable' %}
 <!--DEBUG Holis, khe onda.-->
 
+    <!--BARRA DE NAVEGACIÓN-->
+    {% block 'barra_navegacion' %}
+        <a class="navbar-brand" href="{% url 'AppblogInicio' %}">Inicio</a>
+    {% endblock %}
+
     <!--MANEJO DE ERRORES:-->
     {% if formulario_provincia.errors%}
         Ups, algo malió sal.
     {% endif %}
 
-    <!--BARRA DE NAVEGACIÓN-->
-    {% block 'barra_navegacion' %}
-        <a class="navbar-brand" href="#!">Inicio</a>
-    {% endblock %}
     <!--Nuestro formulario-->
     <form action="" method="POST">{% csrf_token %}
         <table>
