@@ -20,6 +20,4 @@ A su vez, también me parece necesario pensar qué va a aparecer en este templat
 
 - Arregle en el index.html el Static para que toe el css del directorio correspondiente
 - Comente en el formulario_base el navbar ya que generaba inconsistencias entre ese los html y el index.
-- En la Class Provincias elimine el codigo ya que la key la genera de manera interna
-- En la class Actividades elimine el atributo proncia ya que es la tabla maestra de actividades y no la de las relaciones (o sea donde se ejecuta esa actividad ya que vamos a tener la misma actividad en varia sprovincias)
-
+- En la Class Provincias y actividades tienen que tener el codigo y tiene que ser unico
