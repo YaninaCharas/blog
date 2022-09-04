@@ -25,3 +25,5 @@ A su vez, también me parece necesario pensar qué va a aparecer en este templat
 ##Modificaciones/ 
 - Modifique la vista de actividades (saque la provincia y agregue el codigo)
 - Modifique las urls, tenian repetido la declaracion de formularios 2 veces
+- Se cambio el title de index.html, se lo puso dinamico y paso al resto de los htmls
+- Se agrego el Inicio en index.html "navbar-brand"

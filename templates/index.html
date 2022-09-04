@@ -6,7 +6,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
         <meta name="description" content="" />
         <meta name="author" content="" />
-        <title>Landing Page - Start Bootstrap Theme</title>
+        <title>
+            {% block title %}
+                Blog de Experiencias
+            {% endblock %}
+        </title>
         <!-- Favicon-->
         <link rel="icon" type="image/x-icon" href="{% static 'assets/favicon.ico' %}" />
         <!-- Bootstrap icons-->
@@ -22,6 +26,7 @@
             <div class="container">
                 {% block 'barra_navegacion' %}
                 {% endblock %}
+                 <a class="navbar-brand" href="{% url 'AppblogInicio' %}">Inicio</a>
                 <a class="btn btn-success" href="#signup">Nosotras...</a>
                 <a class="btn btn-success" href="{% url 'AppblogFormularioProvincias' %}">¿En qué provincia?</a>
                 <a class="btn btn-success" href="{% url 'AppblogFormularioActividades' %}">¿Qué actividad?</a>
