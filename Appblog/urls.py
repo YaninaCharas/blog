@@ -1,7 +1,6 @@
 from django.urls import path
-from Appblog.views import formulario_actividades, formulario_usuarios, inicio, formulario_provincias, formulario_experiencias
-
-
+from Appblog.views import formulario_actividades, formulario_usuarios
+from Appblog.views import inicio, formulario_provincias, formulario_experiencias
 
 urlpatterns = [
     path('', inicio, name='AppblogInicio'),
