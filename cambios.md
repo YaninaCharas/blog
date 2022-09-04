@@ -1,4 +1,4 @@
-# Cambios propuestos─02/septiembre
+:# Cambios propuestos─02/septiembre
 
 ## Modificaciones
 
@@ -21,3 +21,7 @@ A su vez, también me parece necesario pensar qué va a aparecer en este templat
 - Arregle en el index.html el Static para que toe el css del directorio correspondiente
 - Comente en el formulario_base el navbar ya que generaba inconsistencias entre ese los html y el index.
 - En la Class Provincias y actividades tienen que tener el codigo y tiene que ser unico
+
+##Modificaciones/ 
+- Modifique la vista de actividades (saque la provincia y agregue el codigo)
+- Modifique las urls, tenian repetido la declaracion de formularios 2 veces

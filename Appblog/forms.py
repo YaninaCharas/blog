@@ -14,7 +14,6 @@ class FormularioActividades(forms.Form):
     codigo=forms.IntegerField()
     nombre=forms.CharField()
     descrpcion=forms.CharField()
-    codigo=forms.IntegerField()
 
 class FormularioUsuarios(forms.Form):
     nombre=forms.CharField()

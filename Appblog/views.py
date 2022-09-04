@@ -17,9 +17,9 @@ def formulario_provincias(request):
         if form_provincia1.is_valid:
             datos_a_basededatos=form_provincia1.cleaned_data
             provincia=Provincias(
+                codigo=datos_a_basededatos['codigo'],
                 nombre=datos_a_basededatos['nombre'],
                 zona=datos_a_basededatos['zona'],
-                codigo=datos_a_basededatos['codigo'],
                 descripcion=datos_a_basededatos['descripcion'])
             provincia.save()
             return redirect('AppblogFormularioProvincias')
@@ -38,9 +38,9 @@ def formulario_actividades(request):
         if form_actividad1.is_valid:
             datos_a_basededatos=form_actividad1.cleaned_data
             actividad=Actividades(
+                codigo=datos_a_basededatos['codigo'],
                 nombre=datos_a_basededatos['nombre'],
-                descripcion=datos_a_basededatos['descripcion'],
-                provincia=datos_a_basededatos['provincia'])
+                descripcion=datos_a_basededatos['descripcion'])
             actividad.save()
             return redirect('AppblogFormularioActividades')
     else:
