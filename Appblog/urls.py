@@ -4,9 +4,9 @@ from Appblog.views import formulario_actividades, formulario_usuarios, inicio, f
 
 
 urlpatterns = [
-    path('', inicio,name='AppblogInicio'),
-    path('provincias/',formulario_provincias,name='AppblogFormularioProvincias'),
-    path('actividades/',formulario_actividades,name='AppblogFormularioActividades'),
-    path('usuarios/',formulario_usuarios,name='AppblogFormularioUsuarios'),
-    path('experiencias/',formulario_experiencias,name='AppblogFormularioExperiencias'),
+    path('', inicio, name='AppblogInicio'),
+    path('provincias/', formulario_provincias, name='AppblogFormularioProvincias'),
+    path('actividades/', formulario_actividades, name='AppblogFormularioActividades'),
+    path('usuarios/', formulario_usuarios, name='AppblogFormularioUsuarios'),
+    path('experiencias/', formulario_experiencias, name='AppblogFormularioExperiencias'),
 ]
