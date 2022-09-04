@@ -20,3 +20,10 @@ class FormularioUsuarios(forms.Form):
     apellido=forms.CharField(max_length=30)
     email=forms.EmailField()
     edad=forms.IntegerField()
+
+class FormularioExperiencias(forms.Form):
+    codigo_actividad= forms.IntegerField()
+    codigo_provincia= forms.IntegerField()
+    email_usuario = forms.EmailField()
+    experiencia= forms.Textarea()
+    fecha_experiencia = forms.DateField()

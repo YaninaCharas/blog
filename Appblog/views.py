@@ -1,7 +1,7 @@
 from django.shortcuts import render, redirect
-from Appblog.models import Actividades, Provincias, Usuarios
+from Appblog.models import Actividades, Provincias, Usuarios, Experiencias
 # Importamos los formularios:
-from Appblog.forms import FormularioProvincias, FormularioActividades, FormularioUsuarios
+from Appblog.forms import FormularioProvincias, FormularioActividades, FormularioUsuarios, FormularioExperiencias
 
 
 # Create your views here.
@@ -71,3 +71,25 @@ def formulario_usuarios(request):
         'formulario_usuario':form_usuario1,
     }
     return render(request,'formulario_usuarios.html',contexto)
+
+def formulario_experiencias(request):
+    if request.method=='POST':
+        form_experiencia1=FormularioExperiencias(request.POST)
+        print(form_experiencia1)
+        if form_experiencia1.is_valid:
+            datos_a_basededatos=form_experiencia1.cleaned_data
+            experiencia=Experiencias(
+                codigo_actividad=datos_a_basededatos['codigo_actividad'],
+                codigo_provincia=datos_a_basededatos['codigo_provincia'],
+                email_usuario=datos_a_basededatos['email_usuario'],
+                experiencia=datos_a_basededatos['experiencia'],
+                fecha_experiencia=datos_a_basededatos['fecha_experiencia'])
+            experiencia.save()
+            return redirect('AppblogFormularioExperiencias')
+    else:
+        form_experiencia1=FormularioExperiencias()
+    
+    contexto={
+        'formulario_experiencia':form_experiencia1,
+    }
+    return render(request,'formulario_experiencias.html',contexto)

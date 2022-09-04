@@ -18,3 +18,11 @@ class Usuarios(models.Model):
     apellido = models.CharField(max_length=30)
     email = models.EmailField(unique=True)
     edad = models.IntegerField()
+
+class Experiencias(models.Model):
+    codigo_actividad= models.IntegerField()
+    codigo_provincia= models.IntegerField()
+    email_usuario = models.EmailField()
+    experiencia= models.TextField(max_length=140)
+    fecha_experiencia = models.DateField()
+    

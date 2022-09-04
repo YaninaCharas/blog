@@ -5,12 +5,13 @@ las experiencias, que serían las entradas del blog.
 listar todas las experiencias y mostrar el resultado de esa
 vista acá.-->
 
-{% extends 'index.html' %}
+{% extends 'formulario_base.html' %}
 
 {% block title %}
 Experiencias
 {% endblock %}
 
-{% block contenido_variable %}
-Holis
+
+{% block formulario_especifico %}
+    {{ formulario_experiencia.as_table }}
 {% endblock %}
