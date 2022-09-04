@@ -1,0 +1,11 @@
+<nav class="navbar navbar-light bg-light static-top">
+   <div class="container">
+     {% block 'barra_navegacion' %}
+     {% endblock %}
+     <a class="navbar-brand" href="{% url 'AppblogInicio' %}">Inicio</a>
+     <a class="btn btn-success" href="#signup">Experiencias</a>
+     <a class="btn btn-success" href="{% url 'AppblogFormularioProvincias' %}">¿En qué provincia?</a>
+     <a class="btn btn-success" href="{% url 'AppblogFormularioActividades' %}">¿Qué actividad?</a>
+     <a class="btn btn-success" href="{% url 'AppblogFormularioUsuarios' %}">¿Qué usuario?</a>
+  </div>
+</nav>
