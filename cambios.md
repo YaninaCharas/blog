@@ -31,3 +31,5 @@ A su vez, también me parece necesario pensar qué va a aparecer en este templat
 - Se agregaron en admin.py los modelos para trabajarlos en el panel administrativo
 - Se creo un superuser yanina 1234
 - Se pusieron como key unique=True en Usuarios
+- Se agrego Experiencias en admin.py
+- Se genero el readme.txt
