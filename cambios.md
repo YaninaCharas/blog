@@ -29,4 +29,5 @@ A su vez, también me parece necesario pensar qué va a aparecer en este templat
 - Se agrego el Inicio en index.html "navbar-brand"
 - Se para metrizo el navigation.html
 - Se agregaron en admin.py los modelos para trabajarlos en el panel administrativo
-- Se creo un superuser yanina 
+- Se creo un superuser yanina 1234
+- Se pusieron como key unique=True en Usuarios

@@ -16,5 +16,5 @@ class Actividades(models.Model):
 class Usuarios(models.Model):
     nombre = models.CharField(max_length=30)
     apellido = models.CharField(max_length=30)
-    email = models.EmailField()
+    email = models.EmailField(unique=True)
     edad = models.IntegerField()
