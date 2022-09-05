@@ -8,8 +8,7 @@ from Appblog.forms import FormularioProvincias, FormularioActividades, Formulari
 def inicio(request):
     return render(request, "index.html")
 
-# La vista para ingresar a formulario_provincias.html y HACER ALGO con el
-# formulario:
+# Las vistas para ingresar a los formularios y HACER ALGO con ellos:
 def formulario_provincias(request):
     if request.method=="POST":
         form_provincia1=FormularioProvincias(request.POST)
