@@ -34,18 +34,18 @@ formulario.
 
 **¿EN QUÉ PROVINCIA?**: allí encontraremos el formulario para que cada usuario pueda ir agregando las provincias que ha visitado. [Es muy probable que esta página sea modificada o eliminada. Por
 el momento dado, quedará así.]
-- *Código*: valor representativo para la
+- *Código*: valor key para cada registro. Se eliminará en versiones futuras, pero por una cuestión
+de conocimiento básico sobre báse de datos, quedará por el momento.
+- *Nombre*: nombre de la provincia.
+- *Zona*: sector de la provincia en que se realizó la actividad.
+- *Descripción*: una breve descripción del clima y fauna de dicha provincia.
+- *Enviar*: ídem. anterior página.
 
+**¿QUÉ ACTIVIDAD?**: otro formulario. Aquí los users registran el tipo de actividad realizada y
+en qué consiste. Nótese la presencia de un campo idéntico a la página anterior, *código*. Existe
+por la misma razón que en el caso anterior y será, probablemente, eliminado también por la misma
+causa.
 
-Provincias: Se muestran las provincias registradas en las cuales hay actividades. 
-            Es solo consulta.
-            
-Actividades: Se muestran todas las actividades catalogadas en el sistema.
-
-Usuarios: Perimite que el usuario se pueda registrar en la plataforma.
-            Verifica que el usuario (clave unica email) no este registrado previamente.
-            Los usuarios no se pueden consultar no eliminar desde la plataforma.
-
-Experiencias: Se ingresa a esta pagina en donde se pueden consulta las experiencias realizadas por los usuarios.
-                Se puede buscar por los campos Provincia o actividad
-            Tambien se puede cargar una experiencia nueva.
+**¿QUÉ USUARIO?**: este es un estadío precario de nuestro SIGN-IN, donde se registrarán los users.
+De momento, esta sección servirá como formulario de registro. Hay grandes probabilidades de que
+en versiones posteriores aparezca bajo la label de "REGISTRATE".
