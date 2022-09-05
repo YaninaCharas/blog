@@ -78,9 +78,11 @@ def formulario_experiencias(request):
         if form_experiencia1.is_valid:
             datos_a_basededatos=form_experiencia1.cleaned_data
             experiencia=Experiencias(
-                codigo_actividad=datos_a_basededatos['codigo_actividad'],
-                codigo_provincia=datos_a_basededatos['codigo_provincia'],
-                email_usuario=datos_a_basededatos['email_usuario'],
+                #codigo_actividad=datos_a_basededatos['codigo_actividad'],
+                #codigo_provincia=datos_a_basededatos['codigo_provincia'],
+                provincia=datos_a_basededatos['provincia'],
+                actividad=datos_a_basededatos['actividad'],
+                usuario=datos_a_basededatos['usuario'],
                 experiencia=datos_a_basededatos['experiencia'],
                 fecha_experiencia=datos_a_basededatos['fecha_experiencia'])
             experiencia.save()
