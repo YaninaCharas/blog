@@ -1,5 +1,8 @@
 # BLOG DE EXPERIENCIAS
 
+Descargar y ejecutar rama-belu-prueba-merge. Por el momento es la única que están
+tanto actualizada con todos los requerimientos como funcionando.
+
 ## Descripción del Proyecto: 
 Es un blog en donde se registran experiencias recreativas en Argentina.
 La experiencia esta relacionada a una provincia y actividad cargadas previamente.
