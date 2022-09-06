@@ -2,7 +2,8 @@
 
 Este es el login
 {% block title %}
-Login
+#Login
+{{nombre_form}}
 {% endblock %}
 
 {% block 'contenido-variable' %}
@@ -24,6 +25,6 @@ Login
             {% block formulario_especifico %}
             {% endblock %}
         </table>
-        <input type="submit" value="Login">
+        <input type="submit" value="{{nombre_form}}">
     </form>
 {% endblock %}

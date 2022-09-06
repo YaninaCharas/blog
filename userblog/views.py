@@ -35,23 +35,24 @@ def login_request(request):
 
 
 def register(request):
-    # if request.method == 'POST':
-    #
-    #     # form = UserCreationForm([request.POST](http://request.POST))
-    #     form = UserRegisterForm([request.POST](http://request.POST))
-    #
-    #     if [form.is](http://form.is)_valid():
-    #
-    #         [form.save](http://form.save)()
-    #
-    #         [messages.info](http://messages.info)(request, 'Tu usuario fue registrado satisfactoriamente!')
-    #     else:
-    #         [messages.info](http://messages.info)(request, 'Tu usuario no puso ser registrado!')
-    #     return redirect('AppCoderInicio')
+    if request.method == 'POST':
+
+        form = UserCreationForm(request.POST)
+        #form = UserRegisterForm(request.POST)
+
+        if form.is_valid():
+
+            form.save()
+
+            messages.info(request, 'Tu usuario fue registrado satisfactoriamente!')
+        else:
+            messages.info(request, 'Tu usuario no puso ser registrado!')
+        return redirect('AppBloginicio')
 
     contexto = {
-        # 'form': UserCreationForm(),
-        'form': UserRegisterForm()
+         'form': UserCreationForm(),
+        'nombre_form' : 'Registro'
+        #'form': UserRegisterForm()
     }
 
     return render(request, 'userblog/login.html', contexto)
