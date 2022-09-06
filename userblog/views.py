@@ -31,4 +31,27 @@ def login_request(request):
     contexto = {
         'form': AuthenticationForm(),
     }
+    return render(request, 'login.html', contexto)
+
+
+def register(request):
+    # if request.method == 'POST':
+    #
+    #     # form = UserCreationForm([request.POST](http://request.POST))
+    #     form = UserRegisterForm([request.POST](http://request.POST))
+    #
+    #     if [form.is](http://form.is)_valid():
+    #
+    #         [form.save](http://form.save)()
+    #
+    #         [messages.info](http://messages.info)(request, 'Tu usuario fue registrado satisfactoriamente!')
+    #     else:
+    #         [messages.info](http://messages.info)(request, 'Tu usuario no puso ser registrado!')
+    #     return redirect('AppCoderInicio')
+
+    contexto = {
+        # 'form': UserCreationForm(),
+        'form': UserRegisterForm()
+    }
+
     return render(request, 'userblog/login.html', contexto)

@@ -6,4 +6,5 @@ from userblog.views import *
 
 urlpatterns = [
         path('login/', login_request, name='userbloglogin'),
+        path('registro/', register, name='userblogregister'),
 ]
